@@ -13,5 +13,7 @@ description = __metadata.get('version') or ''
 
 build_command = 'pip install --target={install_path} {root}'
 
+tools = ["maya"]
+
 def commands():
-    env.PYTHONPATH.append('{root}')
+    env.PATH.prepend("{root}/bin")
