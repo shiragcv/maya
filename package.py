@@ -11,7 +11,7 @@ version = __metadata.get('version')
 
 description = __metadata.get('version') or ''
 
-build_command = 'pip install --target={install_path} {root}'
+build_command = 'pip install --upgrade --target={install_path} {root}'
 
 def commands():
     env.PATH.prepend("{root}/bin")
